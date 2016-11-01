@@ -1,0 +1,90 @@
+﻿<XmlInfoOutput>
+  <Symptoms>
+    <Symptom>
+      <SymptomName />
+      <Properties>
+        <Property>
+          <PropertyName />
+          <OptionName/>
+        </Property>
+        <Property>
+          <PropertyName />
+          <OptionName/>
+        </Property>
+      </Properties>
+    </Symptom>
+    <Symptom>
+      <SymptomName />
+      <Properties>
+        <Property>
+          <PropertyName />
+          <OptionName/>
+        </Property>
+        <Property>
+          <PropertyName />
+          <OptionName/>
+        </Property>
+      </Properties>
+    </Symptom>
+    <Signs>
+      <Sign>
+        <SignName/>
+        <Properties>
+          <Property>
+            <PropertyName/>
+            <OptionName/>
+          </Property>
+          <Property>
+            <PropertyName/>
+            <OptionName/>
+          </Property>
+        </Properties>
+      </Sign>
+      <Sign>
+        <SignName/>
+        <Properties>
+          <Property>
+            <PropertyName/>
+            <OptionName/>
+          </Property>
+          <Property>
+            <PropertyName/>
+            <OptionName/>
+          </Property>
+        </Properties>
+      </Sign>
+    </Signs>
+    <Laboratorys>
+      <Laboratory>
+        <LaboratoryName/>
+        <Properties>
+          <Property>
+            <PropertyName/>
+            <OptionName/
+          </Property>
+          <Property>
+            <PropertyName/>
+            <OptionName/
+          </Property>
+        </Properties>
+      </Laboratory>
+      <Laboratory>
+        <LaboratoryName/>
+        <Properties>
+          <Property>
+            <PropertyName/>
+            <OptionName/
+          </Property>
+          <Property>
+            <PropertyName/>
+            <OptionName/
+          </Property>
+        </Properties>
+      </Laboratory>
+      <Radiologys />
+      <OtherExams />
+    <Diagnoses>
+      <DiseaseName/>
+      <ProbalityValue/>
+      </Diagnoses>
+</XmlInfoOutput>

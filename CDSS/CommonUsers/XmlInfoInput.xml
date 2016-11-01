@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<XmlInfoInput>
+  <Symptoms>
+    <Symptom>
+      <SymptomName>濒死感                 </SymptomName>
+      <Properties>
+        <Property>
+          <PropertyName> 持续时间</PropertyName>
+          <OptionName> 数秒钟</OptionName>
+        </Property>
+      </Properties>
+    </Symptom>
+  </Symptoms>
+</XmlInfoInput>

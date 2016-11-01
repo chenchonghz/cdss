@@ -1,0 +1,44 @@
+﻿<XmlInfoOutput>
+  <Symptoms>
+    <Symptom>
+      <SymptomName>鼻塞 </SymptomName>
+    </Symptom>
+    <Symptom>
+      <SymptomName>盗汗 </SymptomName>
+    </Symptom>
+    <Symptom>
+      <SymptomName>发热 </SymptomName>
+    </Symptom>
+    <Symptom>
+      <SymptomName>乏力 </SymptomName>
+    </Symptom>
+    <Symptom>
+      <SymptomName>烦躁不安 </SymptomName>
+    </Symptom>
+    <Symptom>
+      <SymptomName>腹泻 </SymptomName>
+    </Symptom>
+  </Symptoms>
+  <Diagnoses>
+    <Diagnose>
+      <DiseaseName>肺脓肿</DiseaseName>
+      <ProbalityValue>0.2</ProbalityValue>
+    </Diagnose>
+    <Diagnose>
+      <DiseaseName>肺血栓栓塞症</DiseaseName>
+      <ProbalityValue>0.1</ProbalityValue>
+    </Diagnose>
+    <Diagnose>
+      <DiseaseName>肺炎链球菌性肺炎</DiseaseName>
+      <ProbalityValue>0.4</ProbalityValue>
+    </Diagnose>
+    <Diagnose>
+      <DiseaseName>急性上呼吸道感染</DiseaseName>
+      <ProbalityValue>0.2</ProbalityValue>
+    </Diagnose>
+    <Diagnose>
+      <DiseaseName>继发性肺结核</DiseaseName>
+      <ProbalityValue>0.1</ProbalityValue>
+    </Diagnose>
+  </Diagnoses>
+</XmlInfoOutput>

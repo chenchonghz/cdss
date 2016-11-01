@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Resource.master.cs" Inherits="CDSS.Resource" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" runat="server">
+    <nav>
+        <ul id="menu" style="text-align: left; background-color: #7ac0da;">
+            <li><a runat="server" href="~/Resources/UploadResource">上载资源文档</a></li>
+            <li><a runat="server" href="~/Resources/UploadDocument">上载编程文档</a></li>  
+            <li><a runat="server" href="~/Resources/SetUserRoles">用户权限设置</a></li>    
+            <li><a runat="server" href="~/Resources/CheckAndSubmit">知识库审核</a></li>    
+            <li><a runat="server" href="~/Resources/UserLoginInfo">用户登录信息</a></li>    
+            <li><a runat="server" href="~/Resources/FunctionSetting">自定义函数</a></li>     
+        </ul>
+    </nav>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderResource" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

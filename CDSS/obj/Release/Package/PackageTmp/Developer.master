@@ -1,0 +1,17 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Developer.master.cs" Inherits="CDSS.Developer" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" runat="server">
+    <nav>
+        <ul id="menu" style="text-align: left; background-color: #7ac0da;">
+            <li><a runat="server" href="~/Developers/DevelopersInfo">个人信息修改</a></li>
+            <li><a runat="server" href="~/Developers/CreateKnowledgeList">创建知识库</a></li>
+            <li><a runat="server" href="~/Developers/FindingKnowledgeEditor">症候知识库</a></li>
+            <li><a runat="server" href="~/Developers/DiseaseKnowledgeEditor">疾病知识库</a></li>
+        </ul>
+    </nav>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderDeveloper" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

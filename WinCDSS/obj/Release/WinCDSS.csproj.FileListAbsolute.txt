@@ -1,0 +1,8 @@
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\WinCDSS\bin\Release\WinCDSS.exe
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\WinCDSS\bin\Release\WinCDSS.pdb
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\WinCDSS\obj\Release\WinCDSS.csprojResolveAssemblyReference.cache
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\WinCDSS\obj\Release\WinCDSS.Form1.resources
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\WinCDSS\obj\Release\WinCDSS.Properties.Resources.resources
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\WinCDSS\obj\Release\WinCDSS.csproj.GenerateResource.Cache
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\WinCDSS\obj\Release\WinCDSS.exe
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\WinCDSS\obj\Release\WinCDSS.pdb

@@ -1,0 +1,17 @@
+E:\ProjCDSS\WinCDSS\bin\Debug\WinCDSS.exe
+E:\ProjCDSS\WinCDSS\bin\Debug\WinCDSS.pdb
+E:\ProjCDSS\WinCDSS\obj\Debug\WinCDSS.Form1.resources
+E:\ProjCDSS\WinCDSS\obj\Debug\WinCDSS.Properties.Resources.resources
+E:\ProjCDSS\WinCDSS\obj\Debug\WinCDSS.csproj.GenerateResource.Cache
+E:\ProjCDSS\WinCDSS\obj\Debug\WinCDSS.exe
+E:\ProjCDSS\WinCDSS\obj\Debug\WinCDSS.pdb
+E:\ProjCDSS\WinCDSS\obj\Debug\WinCDSS.csprojResolveAssemblyReference.cache
+E:\ProjCDSS\WinCDSS\bin\Debug\WinCDSS.exe.CodeAnalysisLog.xml
+E:\ProjCDSS\WinCDSS\bin\Debug\WinCDSS.exe.lastcodeanalysissucceeded
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\WinCDSS\bin\Debug\WinCDSS.exe
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\WinCDSS\bin\Debug\WinCDSS.pdb
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\WinCDSS\obj\Debug\WinCDSS.Form1.resources
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\WinCDSS\obj\Debug\WinCDSS.Properties.Resources.resources
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\WinCDSS\obj\Debug\WinCDSS.csproj.GenerateResource.Cache
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\WinCDSS\obj\Debug\WinCDSS.exe
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\WinCDSS\obj\Debug\WinCDSS.pdb
