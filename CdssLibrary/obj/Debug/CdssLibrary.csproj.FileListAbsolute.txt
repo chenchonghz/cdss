@@ -6,3 +6,7 @@ E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\
 E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\CdssLibrary\bin\Debug\CdssLibrary.pdb
 E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\CdssLibrary\obj\Debug\CdssLibrary.dll
 E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\ProjCDSS\CdssLibrary\obj\Debug\CdssLibrary.pdb
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\cdss\CdssLibrary\bin\Debug\CdssLibrary.dll
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\cdss\CdssLibrary\bin\Debug\CdssLibrary.pdb
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\cdss\CdssLibrary\obj\Debug\CdssLibrary.dll
+E:\diaoscheng\课题！！！！！！！！！！\CDSS1\C#CDSS\C#CDSS\cdss\CdssLibrary\obj\Debug\CdssLibrary.pdb

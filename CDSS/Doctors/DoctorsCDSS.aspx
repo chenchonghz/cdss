@@ -52,7 +52,7 @@
                 </td>
                 <td style="text-align: left; ">
                     <asp:Panel ID="Panel3" runat="server" Height="127px" ScrollBars="Auto" Width="150px">
-                        <asp:BulletedList ID="blSymptomOption" runat="server" DisplayMode="LinkButton" OnClick="blSymptomOption_Click">
+                        <asp:BulletedList ID="blSymptomOption" runat="server" DisplayMode="LinkButton" OnClick="blSymptomOption_Click" style="height: 13px">
                         </asp:BulletedList>
                     </asp:Panel>
                 </td>
@@ -157,7 +157,7 @@
             <tr>
                 <td  colspan="2"></td>
                 <td style="text-align: left; color: #ff0000;" colspan="4">
-                    <asp:DropDownList ID="DropDownList1" runat="server" Height="29px" Width="150px"></asp:DropDownList>
+                    <asp:DropDownList ID="DropDownList1" runat="server" Height="29px" Width="150px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged"></asp:DropDownList>
                     <asp:Button ID="SureButton" runat="server" Text="确定" Height="29px" Width="80px" OnClick="SureButton_Click"  />
                 </td>
             </tr>

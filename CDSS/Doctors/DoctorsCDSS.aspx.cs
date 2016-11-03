@@ -70,6 +70,29 @@ namespace CDSS
             return OptionNameList;
         }
 
+        private List<string> GetOptionNameList1(string CurSymptomName, string CurSymptomProperty, XmlDocument CurXmlDoc)
+        {
+            XmlNodeList SymptomElementList = CurXmlDoc.GetElementsByTagName("Symptom");
+            List<string> OptionNameList = new List<string>();
+            string tmpSymptomName = "";
+            string tmpPropertyName = "";
+            string tmpOptionName = "";
+            
+            for (int i = 0; i < SymptomElementList.Count; i++)
+            {
+                tmpSymptomName = SymptomElementList[i].Attributes["SymptomName"].Value.Trim();
+                tmpPropertyName = SymptomElementList[i].Attributes["PropertyName"].Value.Trim();
+                tmpOptionName = SymptomElementList[i].Attributes["OptionName"].Value.Trim();
+                int OptionIndex = OptionNameList.IndexOf(tmpOptionName);
+                bool SameSource = ((tmpSymptomName == CurSymptomName) && (tmpPropertyName == CurSymptomProperty));
+                if (SameSource && (tmpOptionName != "") && (OptionIndex < 0))
+                {
+                    OptionNameList.Add(tmpOptionName);
+                }
+            }
+            return OptionNameList;
+        }
+
         private List<string> GetPropertyNameList(string CurSymptomName,XmlDocument CurXmlDoc)
         {
             XmlNodeList SymptomElementList = CurXmlDoc.GetElementsByTagName("Symptom");
@@ -135,7 +158,13 @@ namespace CDSS
             //如果有属性信息则显示属性信息，否则调用CDSS算法并返回进一步问诊信息
             if (NewList.Count > 0)
             {
-                DisplayBulletedList(this.blSymptomProperty, OldList, NewList);
+                XmlDocument SelectedXmlInfo1 = new XmlDocument();
+                SelectedXmlInfo1.LoadXml(BasicalXmlStru);
+                XmlDocument xml = CdssAlgorithm.GetPropertyName(SelSymptomName, SelectedXmlInfo1);
+                // List<string> NewList = GetOptionNameList(SelSymptomName, SelSymptomProperty, CdssXmlForList);
+                List<string> NewList1 = GetPropertyNameList(SelSymptomName, xml);
+
+                DisplayBulletedList(this.blSymptomProperty, OldList, NewList1);
             }
             else
             {
@@ -501,8 +530,11 @@ namespace CDSS
         private void DisplaySymptomOption(string SelSymptomName, string SelSymptomProperty)
         {
             List<string> OldList = GetOptionNameList(SelSymptomName, SelSymptomProperty, SelectedXmlInfo);
-            List<string> NewList = GetOptionNameList(SelSymptomName, SelSymptomProperty, CdssXmlForList);
-
+            XmlDocument SelectedXmlInfo1 = new XmlDocument();
+            SelectedXmlInfo1.LoadXml(BasicalXmlStru);
+            XmlDocument xml = CdssAlgorithm.GetOptionName(SelSymptomName, SelSymptomProperty, SelectedXmlInfo1);
+           // List<string> NewList = GetOptionNameList(SelSymptomName, SelSymptomProperty, CdssXmlForList);
+            List<string> NewList = GetOptionNameList(SelSymptomName, SelSymptomProperty, xml);
             if (NewList.Count > 0)
             {
                 DisplayBulletedList(this.blSymptomOption, OldList, NewList);
@@ -554,6 +586,11 @@ namespace CDSS
         }
 
         protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

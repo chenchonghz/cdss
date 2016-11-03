@@ -145,6 +145,75 @@ namespace CdssProgram
             }
             return xmlDoc;
         }
+
+        public static XmlDocument GetPropertyName(String CurSymptomName, XmlDocument xmlDoc)
+        {
+            XmlNodeList SymptomsList = xmlDoc.GetElementsByTagName("Symptoms");
+            XmlNode SymtomsNode = SymptomsList[0];
+            if (SymtomsNode.ChildNodes.Count > 0)
+            {
+                SymtomsNode.RemoveAll();
+            }
+            SqlConnection CurConn = new SqlConnection(CDSSConnectionString);
+            string SqlString = "SELECT distinct [PropertyName] " +
+                " FROM [DiagnosisData] Where ([FindingType]='Symptom') and (PropertyName is not null) and " +
+                "FindingName=@CurSymptomName";
+            SqlCommand CurCmd = new SqlCommand(SqlString, CurConn);
+            CurCmd.Parameters.AddWithValue("@CurSymptomName", CurSymptomName);
+
+            CurConn.Open();
+            string PropertyName;
+            SqlDataReader CurReader = CurCmd.ExecuteReader();
+            //string tmpSymptomName, tmpPropertyName, tmpOptionName;
+            while (CurReader.Read())
+            {
+                //SymptomName = CurReader["FindingName"].ToString().Trim();
+                PropertyName = CurReader["PropertyName"].ToString().Trim();
+                //OptionName = CurReader["OptionName"].ToString().Trim();
+                XmlElement SymptomElement = xmlDoc.CreateElement("Symptom");
+                SymptomElement.SetAttribute("SymptomName", CurSymptomName);
+                SymptomElement.SetAttribute("PropertyName", PropertyName);
+                SymtomsNode.AppendChild(SymptomElement);
+            }
+            CurConn.Close();
+            return xmlDoc;
+
+        }
+        public static XmlDocument GetOptionName(String CurSymptomName, String CurSymptomProperty, XmlDocument xmlDoc)
+        {
+            XmlNodeList SymptomsList = xmlDoc.GetElementsByTagName("Symptoms");
+            XmlNode SymtomsNode = SymptomsList[0];
+            if (SymtomsNode.ChildNodes.Count > 0)
+            {
+                SymtomsNode.RemoveAll();
+            }
+            SqlConnection CurConn = new SqlConnection(CDSSConnectionString);
+            string SqlString = "SELECT distinct [OptionName] " +
+                " FROM [DiagnosisData] Where ([FindingType]='Symptom') and " +
+                "FindingName=@CurSymptomName and PropertyName=@CurSymptomProperty ";
+            SqlCommand CurCmd = new SqlCommand(SqlString, CurConn);
+            CurCmd.Parameters.AddWithValue("@CurSymptomName", CurSymptomName);
+            CurCmd.Parameters.AddWithValue("@CurSymptomProperty", CurSymptomProperty);
+
+            CurConn.Open();
+            string  OptionName;
+            SqlDataReader CurReader = CurCmd.ExecuteReader();
+            //string tmpSymptomName, tmpPropertyName, tmpOptionName;
+            while (CurReader.Read())
+            {
+                //SymptomName = CurReader["FindingName"].ToString().Trim();
+                //PropertyName = CurReader["PropertyName"].ToString().Trim();
+                OptionName = CurReader["OptionName"].ToString().Trim();
+                XmlElement SymptomElement = xmlDoc.CreateElement("Symptom");
+                SymptomElement.SetAttribute("SymptomName", CurSymptomName);
+                SymptomElement.SetAttribute("PropertyName", CurSymptomProperty);
+                SymptomElement.SetAttribute("OptionName", OptionName);
+                SymtomsNode.AppendChild(SymptomElement);
+            }
+            CurConn.Close();
+            return xmlDoc;
+
+        }
         private static List<SmptomProperyName> GetNewSymptomProperty(List<string> RankTopDiseases, int RankCount)
         {
             List<SmptomProperyName> NewSymptomProperty = new List<SmptomProperyName>();
@@ -153,7 +222,6 @@ namespace CdssProgram
             int NeedConsiderred = System.Math.Min(DiseaseCount, RankCount);
             string tmpDiseaseName = "";
             string PartialCondition = "";
-
             //查询数据库获取排位靠前疾病的相关症候特征选项 
             for (int i = 0; i < NeedConsiderred; i++)
             {
@@ -167,7 +235,6 @@ namespace CdssProgram
                     PartialCondition = PartialCondition + " or ([DiseaseName]='" + tmpDiseaseName + "')";
                 }
             }
-
             SqlConnection CurConn = new SqlConnection(CDSSConnectionString);
             string SqlString = "SELECT Top " + RankCount.ToString() +
                 " [FindingName],[PropertyName],[OptionName],[Specifity] " +
